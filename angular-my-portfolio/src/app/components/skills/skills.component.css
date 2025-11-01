@@ -1,0 +1,78 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  background-color: #fdf6ec;
+  padding: 40px 20px;
+  background: url('src\assets\cloudyBackground.png') no-repeat center center fixed;
+}
+
+.skills-card {
+  max-width: 800px;
+  background-color: #fffaf0;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+mat-card-header {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+mat-card-title {
+  
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #3e2723;
+  font-family: 'Montserrat', sans-serif;
+}
+
+mat-card-subtitle {
+  font-size: 1.1rem;
+  color: #795548;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+mat-card-content p {
+  font-size: 1rem;
+  color: #5d4037;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+mat-card-content b {
+  color: #3e2723;
+  font-weight: 600;
+}
+
+.leetcode-link {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.leetcode-link a {
+  color: #3e2723;
+  text-decoration: none;
+  background-color: #d9c7a6;
+  padding: 8px 18px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.leetcode-link a:hover {
+  background-color: #f0e2c7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}

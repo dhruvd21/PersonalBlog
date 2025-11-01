@@ -1,0 +1,55 @@
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #3B2E2A;
+  cursor: pointer;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Create a bottom border line that doesn’t go full width */
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%; /* Adjust this to control how far it extends */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav a[mat-button] {
+  color: #3B2E2A;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  margin: 0 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a[mat-button]:hover {
+  background-color: rgba(59, 46, 42, 0.08);
+  transform: translateY(-1px);
+}
+
+nav a.active {
+  border-bottom: 2px solid #3B2E2A;
+  font-weight: 600;
+}

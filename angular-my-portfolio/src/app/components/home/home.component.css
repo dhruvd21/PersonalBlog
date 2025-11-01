@@ -1,0 +1,79 @@
+
+
+.logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+
+  background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 249, 240, 0.95) 35%,
+      rgba(255, 241, 229, 1) 100%
+  );
+
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1.5s ease;
+}
+
+.intro-section {
+  background: transparent;
+
+  transition: all 0.4s ease;
+  animation: slideUp 1.5s ease;
+}
+
+.intro-section h1 {
+  
+  font-size: 2.5rem;
+  color: #3e2723;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  color: #5d4037;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+button[mat-raised-button] {
+  border-radius: 25px !important;
+  background-color: transparent;
+  color: #3e2723 !important;
+  font-weight: 500;
+  padding: 10px 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button[mat-raised-button]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
